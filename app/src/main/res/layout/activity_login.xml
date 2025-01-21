@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8E5"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="209dp"
+        android:background="#99B847"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="412dp"
+        android:layout_height="246dp"
+        app:cardBackgroundColor="#99B847"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="248dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logologin2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="324dp"
+        android:layout_marginTop="44dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/marykate"
+            android:labelFor="@id/usernameBox"
+            android:paddingBottom="10dp"
+            android:text="Username:"
+            android:textColor="#63422F"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/usernameBox"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="#613E19" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="29dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/marykate"
+            android:labelFor="@id/passwordBox"
+            android:paddingBottom="10dp"
+            android:text="Password:"
+            android:textColor="#63422F"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/passwordBox"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:inputType="text|textPassword"
+            android:textAlignment="center" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="21dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp">
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="156dp"
+                android:layout_height="55dp"
+                android:background="@drawable/custom_background"
+                android:drawableStart="@drawable/paw"
+                android:fontFamily="@font/marykate"
+                android:paddingStart="10dp"
+                android:shadowColor="#00FFFFFF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="0"
+                android:text="Login"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="#19394B"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="11dp" />
+
+        <TextView
+            android:id="@+id/registerLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:fontFamily="@font/montserrat_alternates_light"
+            android:soundEffectsEnabled="true"
+            android:text="Don't have an account? Register here"
+            android:textAlignment="center"
+            android:textColor="#63422F"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="410dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/grass" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

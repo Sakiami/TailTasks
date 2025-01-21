@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "645361742227",
+    "firebase_url": "https://tailtasks-f31da-default-rtdb.firebaseio.com",
+    "project_id": "tailtasks-f31da",
+    "storage_bucket": "tailtasks-f31da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645361742227:android:cf91aef10400e18fdaf866",
+        "android_client_info": {
+          "package_name": "com.example.tail_tasks"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTBaEjK9PkNJ7d0wmCSk3VuWZdox_Nw9k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645361742227:android:2982927bcbe1e00cdaf866",
+        "android_client_info": {
+          "package_name": "com.example.tailtasks"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTBaEjK9PkNJ7d0wmCSk3VuWZdox_Nw9k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

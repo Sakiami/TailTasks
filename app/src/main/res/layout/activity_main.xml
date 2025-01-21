@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9EDDC0"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="139dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cloud" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="158dp"
+            android:layout_height="58dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.161"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.761">
+
+            <TextView
+                android:id="@+id/petNameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/marykate"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="#773A1A"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/petBreedTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="#773A1A" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/userTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/poppins"
+            android:text="Hello, User!"
+            android:textColor="#1C514D"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.626"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout4"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="351dp"
+        android:layout_height="487dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/taskBtn"
+                android:layout_width="143dp"
+                android:layout_height="54dp"
+                android:layout_weight="1"
+                android:background="@drawable/addtask"
+                android:padding="5dp"
+                android:text="Add Task"
+                android:textAllCaps="false" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/healthBtn"
+                android:layout_width="151dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/trackhealth"
+                android:padding="5dp"
+                android:text="Track Health"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="410dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/taskRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="35dp"
+                tools:listitem="@layout/task_card" />
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="349dp"
+        android:layout_height="190dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/cardhealth"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="36dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingStart="10dp"
+            android:text="Pet Health"
+            android:textColor="#1C514D"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:paddingStart="10dp"
+            android:text="Temperature:"
+            android:textColor="#1C514D"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:paddingStart="10dp"
+            android:text="Weight:"
+            android:textColor="#1C514D"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/energy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:paddingStart="10dp"
+            android:text="Energy:"
+            android:textColor="#1C514D"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/exerciseFreq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:paddingStart="10dp"
+            android:text="Exercise Frequency:"
+            android:textColor="#1C514D"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/vaxx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:paddingStart="10dp"
+            android:text="Vaccine: "
+            android:textColor="#1C514D"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

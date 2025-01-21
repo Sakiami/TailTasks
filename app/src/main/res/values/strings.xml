@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">TailTasks</string>
+    <string-array name="sex">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+    <string-array name="age">
+        <item>day/s</item>
+        <item>week/s</item>
+        <item>month/s</item>
+        <item>year/s</item>
+    </string-array>
+    <string-array name="frequency">
+        <item>per day</item>
+        <item>per week</item>
+        <item>per month</item>
+        <item>per year</item>
+    </string-array>
+    <string-array name="energy">
+        <item>Low Energy</item>
+        <item>Moderate Energy</item>
+        <item>High Energy</item>
+    </string-array>
+    <string-array name="exercise_frequency_array">
+        <item>Once</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Seldom</item>
+    </string-array>
+</resources>
